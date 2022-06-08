@@ -1,0 +1,586 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.5;
+  height: 100vh;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.fz-12 {
+  font-size: 12px;
+}
+
+.fz-18 {
+  font-size: 18px;
+}
+
+.fz-32 {
+  font-size: 32px;
+}
+
+.tac {
+  text-align: center;
+}
+
+.primary {
+  color: #56C4C5;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #56C4C5;
+  color: #fff;
+  border-radius: 30px;
+  padding: 12px 32px;
+}
+
+.btn-price-top {
+  background-color: #FF5D50;
+  padding: 8px 32px;
+}
+
+.btn-number {
+  background-color: #fff;
+  color: #56C4C5;
+  border: 1px solid #56C4C5;
+  font-size: 18px;
+  border-radius: 30px;
+  padding: 12px 32px;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jcs {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.jcc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.alc {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fx-d-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fxw {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.postion-relative {
+  position: relative;
+}
+
+.postion-absolute {
+  position: absolute;
+}
+
+.zindex-1 {
+  z-index: -1;
+}
+
+.dn {
+  display: none;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.bg-color {
+  margin: 0 auto;
+  background: #F7F9FD;
+  background-position: center;
+  width: 77%;
+  height: 470px;
+  border-radius: 0 0 0 300px;
+  left: 170px;
+}
+
+@media (max-width: 768px) {
+  .bg-color {
+    width: 100%;
+    border-radius: 0 0 0 180px;
+    left: 0;
+    top: 78px;
+  }
+}
+
+.header .banner {
+  right: -139px;
+}
+
+@media (max-width: 768px) {
+  .header .banner {
+    display: none;
+  }
+  .header .banner-sm {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 495px;
+    top: 78px;
+  }
+}
+
+.header-a {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 92px;
+}
+
+.header-a .logo img {
+  max-width: 60%;
+  margin: 24px 0;
+}
+
+.header-a a:hover {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .header-a {
+    border-bottom: 2px solid #FFD153;
+    margin-bottom: 32px;
+  }
+  .header-a .logo img {
+    max-width: 60%;
+  }
+  .btn {
+    white-space: nowrap;
+  }
+}
+
+.header-b .cost {
+  font-size: 48px;
+}
+
+@media (max-width: 768px) {
+  .header-b .cost {
+    font-size: 32px;
+  }
+}
+
+.cost-plan {
+  margin-top: 248px;
+}
+
+.cost-plan .ball-3_2 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+  width: 72px;
+  height: 155px;
+  background-repeat: no-repeat;
+  background-position: right;
+  left: -250px;
+  top: 55%;
+}
+
+.cost-plan h2 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.cost-plan .number {
+  gap: 16px;
+}
+
+.cost-plan .btn-number {
+  white-space: nowrap;
+  margin-bottom: 66px;
+}
+
+.cost-plan .btn-number:hover {
+  background-color: #56C4C5;
+  color: #fff;
+}
+
+.cost-plan .top-ball {
+  background-color: #56C4C5;
+  color: #fff;
+  padding: 20px 18px 20px 18px;
+  border-radius: 50%;
+  top: 110px;
+  right: -30px;
+}
+
+.cost-plan .top-ball:hover {
+  font-size: 18px;
+}
+
+.cost-plan .cost-detail {
+  gap: 21px;
+}
+
+.cost-plan .cost-detail .card-item {
+  background: #fff;
+  width: 45%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #00000014;
+}
+
+.cost-plan .cost-detail .card-item h3 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 19px 48px 29px;
+}
+
+.cost-plan .cost-detail .card-item .line {
+  width: 100%;
+  border: 1px solid #DDDDDD;
+  top: 56px;
+}
+
+.cost-plan .cost-detail .card-item p {
+  text-align: center;
+}
+
+.cost-plan .cost-detail .card-item .equal {
+  font-size: 29px;
+}
+
+.cost-plan .cost-detail .card-item ul {
+  margin-bottom: 113px;
+}
+
+.cost-plan .cost-detail .card-item .function {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.cost-plan .cost-detail .card-item .function img {
+  margin-left: 24px;
+  margin-right: 12px;
+}
+
+.cost-plan .compare {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cost-plan .compare .sub {
+  background: #F5F5F5;
+  width: 169px;
+  height: 108px;
+  padding: 24px 32px;
+  border-radius: 10px;
+}
+
+.cost-plan .compare .sub .unit {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cost-plan .btn {
+  left: 177px;
+  bottom: 32px;
+}
+
+.cost-plan .btn:hover {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .cost-plan {
+    margin-top: 440px;
+  }
+  .cost-plan .ball-3_2 {
+    display: none;
+  }
+  .cost-plan .ball-3-sm_2 {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+    width: 96px;
+    height: 155px;
+    background-repeat: no-repeat;
+    background-position: right;
+    left: -20px;
+    top: 55%;
+  }
+  .cost-plan h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .cost-plan .number {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    overflow-x: scroll;
+  }
+  .cost-plan .btn-number {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-bottom: 32px;
+  }
+  .cost-plan .top-ball {
+    padding: 18px 16px;
+    top: -40px;
+    right: 0px;
+  }
+  .cost-plan .cost-detail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cost-plan .cost-detail .card-item {
+    width: 100%;
+  }
+  .cost-plan .cost-detail .card-item .function {
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cost-plan .cost-detail .card-item .function img {
+    margin-left: 8px;
+  }
+  .cost-plan .cost-detail .compare .sub {
+    width: 139px;
+    height: 89px;
+    padding: 16px 24px;
+  }
+  .cost-plan .cost-detail .compare .sub .fx-32 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cost-plan .btn {
+    left: 39%;
+  }
+}
+
+@media (max-width: 425px) {
+  .cost-plan .btn {
+    left: 33%;
+  }
+}
+
+@media (max-width: 375px) {
+  .cost-plan .btn {
+    left: 30%;
+  }
+}
+
+.footer h2 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.footer ul {
+  font-size: 18px;
+}
+
+.footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 32px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  border: 1px solid #00000014;
+}
+
+.footer li .Q {
+  margin-bottom: 16px;
+}
+
+.footer li .A {
+  color: #747474;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 60px;
+  }
+  .footer h2 {
+    margin-bottom: 32px;
+  }
+  .footer ul {
+    font-size: 16px;
+  }
+  .footer li {
+    padding: 16px;
+  }
+}
+
+.web-name {
+  background: #F5F5F5;
+  padding: 16px 0;
+}
+
+@media (max-width: 768px) {
+  .web-name {
+    margin-top: 60px;
+  }
+}
+/*# sourceMappingURL=all.css.map */
